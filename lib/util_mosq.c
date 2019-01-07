@@ -421,7 +421,7 @@ FILE *mosquitto__fopen(const char *path, const char *mode, bool restrict_read)
 
 			hfile = CreateFile(buf, GENERIC_READ | GENERIC_WRITE, 0,
 				&sec,
-				CREATE_NEW,
+				CREATE_ALWAYS,
 				FILE_ATTRIBUTE_NORMAL,
 				NULL);
 
